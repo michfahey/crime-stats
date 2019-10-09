@@ -41,7 +41,7 @@ End If %>
 												
 			#logonPanel
 			{					
-				width: 300px;
+				width: 350px;
 				margin: auto;
 				background-color: #FBFDF1;
 				border: solid #99C91E 1px;
@@ -62,7 +62,7 @@ End If %>
 			#logonHeaderCell
 			{
 				margin: 0px;
-				padding: 6px;				
+				padding: 12px;				
 				background-color: #99C91E;
 			}
 			
@@ -99,7 +99,7 @@ End If %>
 					<div id="logonPanel" >
 						<table cellspacing="0" >
 							<tr>
-								<td id="logonHeaderCell" ><span class="LogonHeader">Crime Stats Logon</span></td>
+								<td id="logonHeaderCell" ><span class="LogonHeader">Crime Statistics Logon</span></td>
 							</tr>
 							<tr>
 								<td id="formCell"> 
