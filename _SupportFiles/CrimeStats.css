@@ -1,0 +1,124 @@
+/* CrimeStats.css   - for SampleCrimeStatistics application   JLH 5/22/2014  */
+
+
+/* fun use of CSS wild card technique */
+TABLE[id^='dtNonViolent'] TR { height: 28px !important;}
+TABLE[id^='dtNonViolent'] TD { padding: 0px 10px 0px 10px; }
+TABLE[id^='dtViolent'] TR { height: 28px !important;}
+TABLE[id^='dtViolent'] TD { padding: 0px 10px 0px 10px; }
+
+
+#rdReportFooter span {
+  width: 886px;
+  height: 24px;
+  display: block;
+  padding: 4px 0px 0px 0px;
+  background: #DCD440;
+  color: #363B42;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Trebuchet MS'!important;
+}
+
+.chart {
+	display:block;
+	float: left;
+	width: 100%;
+}
+
+.chart-selector { white-space: nowrap; }
+
+.chtDataTable { height: 15px; }
+
+.chtLegend {
+	display: block;
+	float: left;
+	height: 350px;
+	vertical-align: middle;
+}
+
+.chtLegendMidwest {
+    background-color:Crimson; 
+	width:10px;
+	height:10px;
+	display: block;
+	float: left;
+	margin-right: 5px;
+}
+
+.chtLegendNortheast {
+    background-color:Blue;
+	width:10px;
+	height:10px;
+	display: block;
+	float: left;
+	margin-right: 5px;	
+}
+
+.chtLegendSelected {
+    background-color:Black;
+	width:10px;
+	height:10px;
+	display: block;
+	float: left;
+	margin-right: 5px;
+}
+
+.chtLegendSouth {
+    background-color: DarkOrange;
+	width: 10px;
+	height: 10px;
+	display: block;
+	float: left;
+	margin-right: 5px;
+}
+
+.chtLegendText {
+	font-weight: bold;
+	font-size: 22px;
+	color: #383E44;
+	padding-bottom: 1px;
+}
+
+.chtLegendWest {
+    background-color:Green;
+	width:10px;
+	height:10px;
+	display: block;
+	float: left;
+	margin-right: 5px;
+}
+
+.chtSelectorText {
+	font-weight: bold;
+	font-size: 18px;
+	color: #383E44;
+	padding-bottom: 5px;
+}
+
+.clearBoth { clear: both; }
+
+.dtBullet { height: 50px; }
+
+.fontDkGray { color: #363B42 !important;}
+.fontLtGray { color: #999999 !important;}
+
+.navList {	
+	display:block;
+	float: left;
+	margin: 0px 24px auto auto;
+}
+
+.noPadding { padding: 0px 0px 0px 0px; }
+
+.reports { 	height: 800px; 	width: 500px; }
+
+.tornadoLegend {
+	display: block;
+	float:right;
+	line-hight:12px;
+	text-align: right;
+	white-space:nowrap;
+	height: 19px;
+	vertical-align:bottom;
+}

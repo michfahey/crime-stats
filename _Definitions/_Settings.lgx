@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Setting
+	ID="_settings"
+	>
+	<Application
+		Caption="Logi Crime Statistics"
+	/>
+	<GlobalCSS
+		ID="Style"
+		StyleSheet="CrimeStats.css"
+		Theme="CrimeStatsTheme"
+	/>
+	<Path
+		AppPath="http://localhost/SampleCrimeStatistics"
+	/>
+	<General
+		rdDebuggerStyle="NoDetail"
+		RepoFriendly="True"
+	/>
+	<Connections>
+		<Note
+			Note="All required data is provided in Excel workbook files."
+		/>
+	</Connections>
+</Setting>

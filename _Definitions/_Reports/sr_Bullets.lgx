@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report
+	ID="sr_Bullets"
+	>
+	<Remark>
+		<Note
+			Note="Subreport for Bullet gauges"
+		/>
+	</Remark>
+	<DefaultRequestParams
+		paramState="District Of Columbia"
+		paramType="dlNonViolentCrimeData"
+		paramYear="2010"
+	/>
+	<LocalData
+		ID="localMarker"
+		>
+		<DataLayer
+			Type="Static"
+			>
+			<StaticDataRow
+				crimeType="violent"
+				ID="dlViolentCrimeData"
+				markerSpot="500"
+				rangeEnd="2000"
+			/>
+			<StaticDataRow
+				crimeType="non-violent"
+				ID="dlNonViolentCrimeData"
+				markerSpot="3023"
+				rangeEnd="5000"
+			/>
+			<CompareFilter
+				CompareType="="
+				CompareValue="@Request.paramType~"
+				DataColumn="ID"
+				DataType="Text"
+				ID="fltCompareType"
+			/>
+		</DataLayer>
+	</LocalData>
+	<Body
+		Class="noPadding"
+		>
+		<Gauge
+			BackgroundColor="#363B42"
+			BulletColor="#86CAC3"
+			ChartHeight="45"
+			ChartWidth="140"
+			ID="gBulletBar"
+			MarkerColor="White"
+			MarkerValue="@Local.markerSpot~"
+			TickColor="#ffffff"
+			TickCount="2"
+			TickLabelFormat="mp"
+			Type="BulletBar"
+			Value="@Data.Column15~"
+			>
+			<DataLayer
+				ID="dlTypeList"
+				LinkedDataLayerID="@Request.paramType~"
+				Type="Linked"
+				>
+				<ConditionFilter
+					Condition="&quot;@Data.Column3~&quot; == &quot;@Request.paramState~&quot;"
+				/>
+				<ConditionFilter
+					Condition="&quot;@Data.Column4~&quot; == @Request.paramYear~"
+				/>
+				<FormattedColumn
+					DataColumn="Column15"
+					Format="###,###"
+					ID="fmtCol15"
+				/>
+			</DataLayer>
+			<GaugeRange
+				Color="#363b42"
+				RangeEndValue="@Local.rangeEnd~"
+			/>
+			<Quicktip>
+				<QuicktipRow
+					Caption="@Data.fmtCol15~ @Local.crimeType~ crimes in @Data.Column3~"
+				/>
+			</Quicktip>
+		</Gauge>
+	</Body>
+	<ideTestParams
+		paramState="District Of Columbia"
+		paramType="dlNonViolentCrimeData"
+		paramYear="2010"
+	/>
+</Report>
