@@ -99,7 +99,7 @@ End If %>
 					<div id="logonPanel" >
 						<table cellspacing="0" >
 							<tr>
-								<td id="logonHeaderCell" ><span class="LogonHeader">Logon</span></td>
+								<td id="logonHeaderCell" ><span class="LogonHeader">Crime Stats Logon</span></td>
 							</tr>
 							<tr>
 								<td id="formCell"> 
